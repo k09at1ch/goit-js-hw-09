@@ -27,7 +27,7 @@ startButton.addEventListener("click", (event)=>{
       return;
     }
     const countdownDate = dateSelector.selectedDates[0];
-    countdownInterval = setInterval(() => {
+    let countdownInterval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate.getTime() - now;
   
